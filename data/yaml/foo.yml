@@ -1,0 +1,35 @@
+
+name: Foo
+description: ....
+keywords: vehicle
+
+# This property indicates further information about a CreativeWork. 
+usageInfo: 
+
+# A downloadable form of this dataset, at a specific location, in a specific format.
+distribution: 
+  encodingFormat: csv
+  contentURL: 
+
+# The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.
+creator: 
+  name: foo
+  url: https://example.com/dataset/
+  contactPoint: 
+    email: dataset@example.com
+
+license: 
+  name: Custom license
+  url: https://example.com/custom_license
+
+version: 0.9b
+dateCreated: 2020-04-18
+dateModified: 2020-04-18
+datePublished: 2020-04-18
+
+# The identifier property represents any kind of identifier.
+identifier: 
+
+# A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.
+citation: X.... https://....
+

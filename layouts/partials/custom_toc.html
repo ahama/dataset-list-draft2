@@ -1,0 +1,5 @@
+<br>
+{{ range $fname, $data := $.Site.Data.yaml }}
+  <a href="#{{$fname}}">{{$data.name}}</a>
+{{ end }}
+<br>

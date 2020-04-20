@@ -1,0 +1,18 @@
+theme = "contrast-hugo"
+title = "X Dataset List"
+publishDir = "docs"
+enableRobotsTXT = true
+
+[params]
+  sidebar = true
+#  sidebar = false
+  show_excerpts = false
+#  description = ' '
+  footer = 'Powered by <a href="https://gohugo.io">Hugo</a> with <a href="https://github.com/niklasbuschmann/contrast-hugo">Contrast</a> theme'
+  custom_toc = true
+
+#[menu]
+#main = [
+#  { name = "Home", url = "/", identifier = "home", weight = 1}
+#]
+

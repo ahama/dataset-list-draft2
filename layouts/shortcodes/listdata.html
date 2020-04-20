@@ -1,0 +1,26 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+{{ define "conv2html" }}
+    <ul>
+    {{ range $k, $v := . }}
+        {{ if reflect.IsMap $v }}
+            <li>{{ $k }}</li>
+            <ul>
+            {{ template "conv2html" ($v) }}
+            </ul>
+        {{ else }}
+            {{ if eq $k "url" }}
+                <li>{{ $k }} : <a href="{{ $v }}">{{ $v }}</a></li>
+            {{ else }}
+                <li>{{ $k }} : {{ $v }}</li>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    </ul>
+{{ end }}
+
+{{ range $fname, $data := .Site.Data.yaml }}
+    <hr>
+    <h2 id="{{ $fname }}">{{ $data.name }}</h2>
+    {{ template "conv2html" ($data) }}
+{{ end }}
